@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&dispaly=swap')"";
+@import url("https://fonts.googleapis.com/css?family=Sofia|Trirong");
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+body{
+  min-height: 100vh;
+  background-color: rgb(224, 224, 224);
+  color: rgb(59, 59, 59);
+}
+
+/* header */
+
+nav .logo{
+  width: 100px;
+  height: 50px;
+}
+
+nav{
+  height: 80px;
+  background: #e2e5de;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
+  text-transform: capitalize;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+
+nav ul li{
+  margin: 2px 10px;
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+  color: black;
+  background: #a6a8a3;
+  border-radius: 10px;
+}
+
+nav .icon i{
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+#click{
+  display: none;
+}
+
+
+/* endheader */
+
+
+/* body */
+#body .firstsection{
+  margin-top: 30px;
+  height: 900px;
+  margin-bottom: 70px;
+}
+
+#body .firstsection .dimage{
+  float: right;
+  width: 50%;
+}
+
+#body .firstsection .dimage .img{
+  height: 900px;
+  width: 100%;
+}
+
+#body .firstsection .dtext{
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+#body .firstsection .dtext .heading{
+  color: black;
+  font-family:"Trirong";
+  font-size: 30px;
+  width: 100%;
+  margin-top: 390px;
+}
+
+#body .firstsection .dtext p {
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+#body .firstsection .dtext .link {
+  width: 100%;
+  padding-left: 30px;
+  color: black;
+  line-height: 5em;
+}
+
+#body .secondsection{
+  margin: 50px auto 0px auto;
+  text-align: center;
+  width: 70%;
+}
+
+#body .secondsection .heading1{
+  color: black;
+  font-family:"Trirong";
+  font-size: 30px;
+  width: 100%;
+}
+}
+
+#body .secondsection .dimage{
+}
+
+#body .secondsection .img1{
+  margin-top: 150px;
+  width: 250px;
+  height: 350px;
+  float: left;
+}
+
+#body .secondsection .dtext1{
+  float: right;
+  width: 65%;
+  margin-top: 150px;
+}
+
+#body .secondsection .dtext1 .comment{
+  font-family: "Poppins";
+  font-size: 22px;
+  text-align: right;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+hr{
+  width: 100%;
+}
+
+/* footer section */
+.footer .code{
+  text-align: center;
+}
+/* endfooter section */
+
+/* endbody */
+
+
+
+
+
+@media (max-width: 940px)  {
+
+  hr{
+    display: none;
+  }
+
+  /* header */
+  nav .logo{
+    width: 100px;
+    height: 50px;
+    margin: 0px auto 0px auto;
+  }
+
+  nav .icon i{
+    display: block;
+  }
+
+  #click:checked ~ .icon i::before{
+    content: "\f00d";
+  }
+
+  nav ul{
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    background: #e2e5de;
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  #click:checked ~ ul{
+    right: 0%;
+  }
+
+  nav ul li{
+    margin: 30px 0px;
+  }
+
+  nav ul li a{
+    font-size: 19px;
+    display: block;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: #ff6600;
+    background: none;
+    letter-spacing: 5px;
+  }
+
+  h1{
+    width: 70%;
+    font-style: italic;
+    font-family: serif;
+    text-align: center;
+    margin: 30px auto 30px auto;
+  }
+  /* endheader */
+
+
+
+  /* body */
+  #body .firstsection{
+    margin-top: 30px;
+    height: 900px;
+    margin-bottom: 70px;
+  }
+
+  #body .firstsection .dimage{
+    float: none;
+    width: 100%;
+  }
+
+  #body .firstsection .dimage .img{
+    height: 100vh;
+    width: 100%;
+  }
+
+  #body .firstsection .dtext{
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  #body .firstsection .dtext .heading{
+    color: black;
+    font-family:"Trirong";
+    font-size: 30px;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  #body .firstsection .dtext p {
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #body .firstsection .dtext .link {
+    width: 100%;
+    padding-left: 30px;
+    color: black;
+    line-height: 5em;
+  }
+
+  #body .secondsection{
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #body .secondsection .heading1 p{
+    color: black;
+    margin: 0px 0px 0px 0px;
+    font-family:"Trirong";
+    font-size: 21px;
+    width: 100%;
+  }
+  }
+
+  #body .secondsection .dimage{
+  }
+
+  #body .secondsection .img1{
+    margin-top: 50px;
+    width: 250px;
+    height: 350px;
+    float: none;
+  }
+
+  #body .secondsection .dtext1{
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #body .secondsection .dtext1 .comment{
+    font-family: "Poppins";
+    font-size: 18px;
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+  }
+
+  hr{
+    width: 100%;
+  }
+
+}

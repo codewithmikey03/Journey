@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&dispaly=swap')"";
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+/* header */
+
+nav .logo{
+  width: 100px;
+  height: 50px;
+}
+
+nav{
+  height: 80px;
+  background: #e2e5de;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
+  text-transform: capitalize;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+
+nav ul li{
+  margin: 2px 10px;
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+  color: black;
+  background: #a6a8a3;
+  border-radius: 10px;
+}
+
+nav .icon i{
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+#click{
+  display: none;
+}
+
+/* endheader */
+
+
+/* imageslider */
+
+.slider{
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.slider figure div{
+  float: left;
+  width: 20%;
+}
+
+.slider figure img{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  animation: animate 20s infinite;
+}
+
+
+@keyframes animate {
+  0%{
+    left: 0%;
+  }
+  10%{
+    left: 0%;
+  }
+  12%{
+    left: -100%;
+  }
+  22%{
+    left: -100%;
+  }
+  24%{
+    left: -200%;
+  }
+  34%{
+    left: -200%;
+  }
+  36%{
+    left: -300%;
+  }
+  46%{
+    left: -300%;
+  }
+  48%{
+    left: -400%;
+  }
+  58%{
+    left: -400%;
+  }
+  60%{
+    left: -300%;
+  }
+  70%{
+    left: -300%;
+  }
+  72%{
+    left: -200%;
+  }
+  82%{
+    left: -200%;
+  }
+  84%{
+    left: -100%;
+  }
+  94%{
+    left: -100%;
+  }
+  96%{
+    left: 0%;
+  }
+}
+/* endimageslider */
+
+
+/* home section */
+.hometext{
+  background-color: #6f8faf;
+  width: 100%;
+  height: 400px;
+}
+
+.text{
+  width: 50%;
+  text-align: center;
+  margin: 0px auto 0px auto;
+  padding-top: 150px;
+}
+
+.text p{
+  color: white;
+  font-size: 20px;
+}
+
+.text a{
+  color: white;
+  font-size: 18px;
+}
+
+.text a:hover{
+  color: purple;
+}
+
+.hometext1{
+  width: 100%;
+  height: 500px;
+}
+
+.moretext .one{
+  font-family: menlo;
+  font-size: 25px;
+  padding-top: 65px;
+  padding-left: 250px;
+}
+
+.moretext .two{
+  font-family: serif;
+  width: 50%;
+  margin: 0px auto 0px auto;
+  padding-top: 100px;
+  font-size: 20px;
+}
+
+.moretext a{
+  color: black;
+}
+
+.moretext a:hover{
+  color: purple;
+}
+
+/* endhome section */
+
+
+/* imageslider */
+.slider2{
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.slider2 figure div{
+  float: left;
+  width: 20%;
+}
+
+.slider2 figure img{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.slider2 figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  animation: anime 20s infinite;
+}
+
+
+@keyframes anime {
+  0%{
+    left: 0%;
+  }
+  10%{
+    left: 0%;
+  }
+  12%{
+    left: -100%;
+  }
+  22%{
+    left: -100%;
+  }
+  24%{
+    left: -200%;
+  }
+  34%{
+    left: -200%;
+  }
+  36%{
+    left: -300%;
+  }
+  46%{
+    left: -300%;
+  }
+  48%{
+    left: -400%;
+  }
+  58%{
+    left: -400%;
+  }
+  60%{
+    left: -300%;
+  }
+  70%{
+    left: -300%;
+  }
+  72%{
+    left: -200%;
+  }
+  82%{
+    left: -200%;
+  }
+  84%{
+    left: -100%;
+  }
+  94%{
+    left: -100%;
+  }
+  96%{
+    left: 0%;
+  }
+}
+/* endimageslider */
+
+/* home section */
+.hometext2{
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+
+.more_text .one{
+  font-family: robot;
+  font-size: 30px;
+  padding-top: 100px;
+}
+
+.more_text .two{
+  font-family: serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+.more_text a{
+  color: black;
+}
+
+.more_text a:hover{
+  color: purple;
+}
+
+
+/* endhome section */
+
+
+/* footer section */
+.footer .code{
+  text-align: center;
+}
+/* endfooter section */
+
+
+@media (max-width: 940px)  {
+
+  nav .logo{
+    width: 100px;
+    height: 50px;
+    margin: 0px auto 0px auto;
+  }
+
+  nav .icon i{
+    display: block;
+  }
+
+  #click:checked ~ .icon i::before{
+    content: "\f00d";
+  }
+
+  nav ul{
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    background: #e2e5de;
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  #click:checked ~ ul{
+    right: 0%;
+  }
+
+  nav ul li{
+  margin: 30px 0px;
+  }
+
+  nav ul li a{
+    font-size: 19px;
+    display: block;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: #ff6600;
+    background: none;
+    letter-spacing: 5px;
+  }
+
+  /* home section */
+  .hometext{
+    background-color: #6f8faf;
+    width: 100%;
+    height: 400px;
+  }
+
+  .text{
+    width: 100%;
+    text-align: center;
+    margin: 0px auto 0px auto;
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .text p{
+    color: white;
+    font-size: 20px;
+  }
+
+  .text a{
+    color: white;
+    font-size: 18px;
+  }
+
+  .text a:hover{
+    color: purple;
+  }
+
+  .hometext1{
+    width: 100%;
+    height: 500px;
+  }
+
+  .moretext{
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .moretext .one{
+    font-family: menlo;
+    font-size: 25px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .moretext .two{
+    font-family: serif;
+    width: 100%;
+    padding-top: 50px;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .moretext a{
+    color: black;
+    font-size: 15px;
+  }
+
+  .moretext a:hover{
+    color: purple;
+  }
+  /* endhome section */
+
+  /* home section */
+  .hometext2{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+  }
+
+  .more_text .one{
+    font-family: robot;
+    font-size: 30px;
+    padding-top: 100px;
+  }
+
+  .more_text .two{
+    font-family: serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .more_text a{
+    color: black;
+  }
+
+  .more_text a:hover{
+    color: purple;
+  }
+  /* endhome section */
+
+
+
+
+  /* endhome section */
+
+
+}
